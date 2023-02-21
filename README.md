@@ -235,6 +235,8 @@ Example Data:
 <img width="488" alt="image" src="https://user-images.githubusercontent.com/45884325/220452549-8404aebb-27cc-4216-a7f9-6ad554cebad5.png">
 data for PACF - spool delivered with the printer
 
+
+
 ### Block 6
 
 Example Data:
@@ -252,6 +254,8 @@ Example Data:
 
 <img width="637" alt="image" src="https://user-images.githubusercontent.com/45884325/220452342-7f62fea3-5df7-40ac-a1cc-3e8add30e0a8.png">
 data from PACF spool delivered with the printer does not seem to match this pattern
+
+
 ### Block 8
 
 Example Data:
