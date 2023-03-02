@@ -224,11 +224,13 @@ Known Values:
 ### Block 5
 
 Example Data:
-`AA AA AA AA BB BB CC CC CC CC CC CC CC CC CC CC`
+`AA AA AA AA BB BB CC CC DD DD DD DD EE EE EE EE`
 
 | bytes | type                 |  example data location         | Description                             |
 |-------|----------------|--------------------------------|-----------------------------------------------|
-|  9-0 | **Unkown**      | CC CC CC CC CC CC CC CC CC CC  | **Unkown**                                    |
+|  3-0  | **Unused?**    | EE EE EE EE                    | **Unkown**                                    |
+|  7-4  | Float 32       | DD DD DD DD                    | Filament Diameter                             |
+|  9-8  | **Unknown**    | CC CC                          | **Unknown Integer**                           |
 | 11-10  |  uint16 (LE)  | BB BB                          | Spool Weight in g  HEX: E803 --> 1000 g       |
 | 15-12  |  RGBA in HEX  | AA AA AA AA                    | Color in hex RBGA                             |
 
@@ -259,12 +261,18 @@ data from PACF spool delivered with the printer does not seem to match this patt
 ### Block 8
 
 Example Data:
-`AA AA AA AA AA AA AA AA AA AA AA AA BB BB BB BB`
+`AA AA BB BB CC CC DD DD EE EE EE EE FF FF FF FF`
 
 | bytes | type       |  example data location              |description                      |
 |-------|------------|-------------------------------------|---------------------------------|
-|  3-0  | **Unkown** | BB BB BB BB                         | **Unkown**                      |
-| 15-4  | RAW Bin    | AA AA AA AA AA AA AA AA AA AA AA AA | X Cam info                      |
+|  3-0  | Float 32   | FF FF FF FF                         | X Cam info **Unknown purpose**  |
+|  7-4  | Float 32   | EE EE EE EE                         | X Cam info **Unknown purpose**  |
+|  9-8  | uint16     | DD DD                               | X Cam info **Unknown purpose**  |
+| 11-10 | uint16     | CC CC                               | X Cam info **Unknown purpose**  |
+| 13-12 | uint16     | BB BB                               | X Cam info **Unknown purpose**  |
+| 15-14 | uint16     | AA AA                               | X Cam info **Unknown purpose**  |
+
+
 
 ### Block 9
 
