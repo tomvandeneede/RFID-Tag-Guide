@@ -234,10 +234,6 @@ Example Data:
 | 11-10  |  uint16 (LE)  | BB BB                          | Spool Weight in g  HEX: E803 --> 1000 g       |
 | 15-12  |  RGBA in HEX  | AA AA AA AA                    | Color in hex RBGA                             |
 
-<img width="488" alt="image" src="https://user-images.githubusercontent.com/45884325/220452549-8404aebb-27cc-4216-a7f9-6ad554cebad5.png">
-data for PACF - spool delivered with the printer
-
-
 
 ### Block 6
 
@@ -254,8 +250,6 @@ Example Data:
 | 13-12 | uint16 (LE)   | BB BB                    | Drying time in h                              |
 | 15-14 | uint16 (LE)   | AA AA                    | Drying temp in °C                             |
 
-<img width="637" alt="image" src="https://user-images.githubusercontent.com/45884325/220452342-7f62fea3-5df7-40ac-a1cc-3e8add30e0a8.png">
-data from PACF spool delivered with the printer does not seem to match this pattern
 
 
 ### Block 8
