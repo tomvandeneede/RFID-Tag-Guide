@@ -266,6 +266,7 @@ Example Data:
 | 13-12 | uint16     | BB BB                               | X Cam info **Unknown purpose**  |
 | 15-14 | uint16     | AA AA                               | X Cam info **Unknown purpose**  |
 
+<img width="621" alt="image" src="https://user-images.githubusercontent.com/45884325/222663913-3760a359-8496-4ba7-9892-c982d0c975e5.png">
 
 
 ### Block 9
